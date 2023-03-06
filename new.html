@@ -1,0 +1,29 @@
+{% assign product_title = 'gorgeous baby<br /> blue cardigan and <br /> vest set!' %}
+{% assign product_text = 'Wear together or separate depending on your mood.' %}
+
+<section class="img-2-column">
+
+<div class="grid-2-column">
+<div class="section-left">
+    {{ '355.png' | asset_url | img_tag: 'Blog image 1', 'star-img-large' }}
+    {{ 'lifestyle-1.png' | asset_url | img_tag: 'Lifestyle-1', 'blog-image-left' }}
+    {{ '356.png' | asset_url | img_tag: 'Blog image 2', 'star-img-small' }}
+    <img src="/carbon/src/images/Rectangle 356.png" alt="" class="star-img-small">
+    <div class="mobile-right-image mobile">
+    {{ 'lifestyle-2.png' | asset_url | img_tag: 'Lifestyle-2', 'img-right, img-right-mobile' }}
+    </div>
+</div>
+<div class="section-right">
+{{ 'Vector.png' | asset_url | img_tag: 'Star Vector', 'h2-vector' }}
+    <h2 class="pink-h2 desktop">{{ product_title }}</h2>
+    <p class="sub-heading desktop">{{ product_text }}</p>
+    {{ 'lifestyle-2.png' | asset_url | img_tag: 'Lifestyle-2', 'img-right, desktop' }}
+</div>
+<h2 class="pink-h2 mobile">{{ product_title }}</h2>
+<p class="sub-heading mobile">{{ product_text }}</p>
+</div>
+</section>
+</div>
+
+
+
