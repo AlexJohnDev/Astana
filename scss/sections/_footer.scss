@@ -1,33 +1,65 @@
 footer {
-    background-color: rgb(11, 11, 15);
-    padding: 35px 0;
+    background-color: #222222;
+    padding: 100px 0;
 }
 
-.footer-line-one {
+.footer-block {
     display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
+    flex-direction: column;
+    @media (max-width: 768px) {
+        margin-left: 0px;
+    }
 }
 
-.footer-line-two {
+.contact-input {
+    width: 250px;
+    height: 40px;
+    @media (max-width: 768px) {
+        width: 150px;
+    }
+}
+
+.contact-right {
     display: flex;
-    justify-content: space-between;
+    margin-right: 0;
+    @media (max-width: 768px) {
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+}
+
+.contact-block {
+    display: flex;
     align-items: center;
     flex-wrap: wrap;
 }
 
-.footer-text {
-    margin: 0px 50px 0px 0px;
-}
-
-.about-text {
-    padding-right: 15px;
-    margin-bottom: 10px;
-}
-
-.footer-text,
-.about-text {
-    @media (max-width: 767px) {
-        margin-bottom: 10px;
+.contact-left {
+    display: flex;
+    margin-right: 0;
+    i {
+        margin: 0 10px;
+        color: white;
+        @media (max-width: 768px) {
+            margin-left: 0px;
+        }
     }
+    @media (max-width: 768px) {
+        margin-left: 0px;
+        display: block;
+        width: 100%;
+    }
+}
+
+.contact-btn {
+    background-color: $primary-orange;
+    color: white;
+    height: 40px !important;
+    padding: 0 10px;
+    font-size: 9px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    letter-spacing: 3px;
+    margin-left: 0px;
 }
