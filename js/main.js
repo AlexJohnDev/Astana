@@ -26,6 +26,8 @@ function toggleMobileMenu() {
   document.querySelector(".mobile-bar").classList.toggle("active");
 }
 
+// SWIPER JS SETTINGS
+
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 1,
   spaceBetween: 30,
